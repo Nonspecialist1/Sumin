@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Sumin's homepage</title>
+<title>Suminwiki : 최수민이란?</title>
 <meta charset="utf-8">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -15,25 +15,60 @@
   gtag('config', 'G-KT112EBTHK');
 </script>
 
+<style>
+  body {
+    margin: 0;
+  }
+  div {
+    border-top: 3px solid gray;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid gray;
+    margin: 0;
+    padding: 15px;
+}
+  a {
+    color: green;
+    text-decoration: none;
+  }
+  ol {
+    height: 110px;
+    padding-bottom: 10px;
+  }
+</style>
+
 </head>
 
 <body>
-<h1><a href="Sumin.html">최수민이란?</h1>
+<h1><a href="Sumin.html" style="color:green">수민위키</h1>
 
 <ol>
 <li><a href="a.html">왜관, 순심여고의 자랑 최수민</li></a><br>
 <li><a href="b.html">계명대학교 심리학과 15학번의 자랑 최수민</li></a><br>
 <li><a href="c.html">심세현의 여자친구 최수민</li></a><br>
 </ol>
+<input type="button" value="야간모드★" onclick="
+  document.querySelector('body').style.backgroundColor = 'black'
+  document.querySelector('body').style.color = 'white'
+  alert('새로고침하면 해제됩니다.')">
+<input type="button" value="일반모드☆" onclick="
+  document.querySelector('body').style.backgroundColor = 'white'
+  document.querySelector('body').style.color = 'black'
+  alert('새로고침해도 작동됩니다.')">
+<input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-<h2>안녕하세요 <input type="checkbox"></h2>
+<div>
+<h2>안녕하세요 <input type="checkbox" onclick="alert('반갑습니다.')"></h2>
 <h2>HELLO <input type="checkbox"></h2>
 <h2>Bonjour <input type="checkbox"></h2>
 <h2>Nihao <input type="checkbox"></h2>
 <h2>Danke <input type="checkbox"></h2>
 <h2>Grazie <input type="checkbox"></h2>
 <h2>Merci <input type="checkbox"></h2>
-<h2>감사합니다 <input type="checkbox"></h2>
+<h2>감사합니다 <input type="checkbox" onclick="alert('고맙습니다.')"></h2>
+</div>
 
 <p>
 <img src="1.jpg" width="50%" title="내가 누구게?">
