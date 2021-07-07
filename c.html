@@ -19,14 +19,18 @@
 
 <body>
 <h1><a href="Sumin.html">수민위키</a></h1>
-<input type="button" value="야간모드★" onclick="
-  document.querySelector('body').style.backgroundColor = 'black'
-  document.querySelector('body').style.color = 'white'
-  alert('새로고침하면 해제됩니다.')">
-<input type="button" value="일반모드☆" onclick="
-  document.querySelector('body').style.backgroundColor = 'white'
-  document.querySelector('body').style.color = 'black'
-  alert('새로고침해도 작동됩니다.')">
+<input type="button" value='야간모드★' onclick="
+  var target = document.querySelector('body');
+  if(this.value === '야간모드★'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = '일반모드☆';
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = '야간모드★';
+  }
+  ">
 <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 <h2>D+574일 진행중♥</h2>
 <img src="4.png" width="50%" title="아이패드로 누끼를 따 보았따">
