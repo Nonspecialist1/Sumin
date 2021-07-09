@@ -55,10 +55,25 @@
     target.style.backgroundColor = 'black';
     target.style.color = 'white';
     this.value = '일반모드☆';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'gold';
+      i = i + 1;
+    }
+
   } else {
     target.style.backgroundColor = 'white';
     target.style.color = 'black';
     this.value = '야간모드★';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = 'green';
+      i = i + 1;
+    }
   }
   ">
 <input type="text" onchange="alert('이건 아무의미 없습니다.')">
