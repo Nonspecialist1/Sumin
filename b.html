@@ -1,54 +1,74 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-<title>계명의 자랑 최수민</title>
-<meta charset="utf-8">
+  <title>계명의 자랑 최수민</title>
+  <meta charset="utf-8">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+  function NDmode(self){
+    var target = document.querySelector('body');
+    if(self.value === '야간모드★'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = '일반모드☆';
 
-  gtag('config', 'G-KT112EBTHK');
-</script>
-<link rel="stylesheet" href="stylee.css">
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'gold';
+        i = i + 1;
+      }
+
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = '야간모드★';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'green';
+        i = i + 1;
+      }
+    }
+  }
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KT112EBTHK');
+  </script>
+
+  <link rel="stylesheet" href="stylee.css">
 </head>
 
 <body>
-<h1><a href="Sumin.html">수민위키</a></h1>
-<input type="button" value='야간모드★' onclick="
-  var target = document.querySelector('body');
-  if(this.value === '야간모드★'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = '일반모드☆';
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = '야간모드★';
-  }
-  ">
-<input type="text" onchange="alert('이건 아무의미 없습니다.')">
-<h2>계명대학교 심리학과 15학번의 자랑 최수민</h2>
-<img src="3.jpg" width="45%" title="수민이의 20살 감성 사진">
+  <h1><a href="Sumin.html">수민위키</a></h1>
+  <input type="button" value='야간모드★' onclick="
+    NDmode(this);
+    ">
+  <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-<ol>
-<li>2015년 계명대 심리학과에 입학, 푸른색 코트를 자주 입고 다녔다. 본인은 아니라고 하지만, 사자와 같은 곱슬머리가 작성자의 기억에 남아있다.</li><br>
-<li>1학년 1학기 MT 이후 친구의 소개로 처음 남자친구를 사귀게 된다.</li> <br>
-<li><a title="지금은 모두 와해되고 일대일로만 만난다.">학기 초, 예빈이를 필두로 심요미 맴버였으며 이후 오징어들이라는 모임의 핵심 맴버로 활동했다.</a></li><br>
-<li>15년도 신입생 환영회 심리학과 레드벨벳 팀(큐트컨셉,,?)의 맴버로 Happiness 안무를 선보여 학과 최초(?)로 사회대 1등이라는 쾌거를 달성했다.</li><br>
-<li>1학년 최종 학점이 우수하여 '교직 이수'에 선발(신의 한수)되어 현재 전문상담교사 교원 자격증을 획득했다.</li> <br>
-<li><a title="술과 클럽이 가장 많았던 질풍노도의 시기로 알바비를 모두 술로 탕진했다고 한다.">2학년 휴학 후 맥도날드 알바를 하며 고모 집을 나와 송보람과 동거생활을 시작 한다. 이 때, 학회장 년도와 함께 인생에서 가장 술을 많이 마셨다고 한다.</a></li> <br>
-<li>대학에서 말이 "짹짹짹" 많다는 의미에서 '참새'라는 별명을 갖게 되었다.<br><br>
-<li>3학년 이후 보람이와 동거 생활을 청산하고 최초로 독립에 성공한다. 정문 원룸에서 정란이와 이웃하여 살았으며 여기는 지리상 이점으로 사회대까지 5분이면 도착했다.</li> <br>
-<li>4학년 얼떨결(?)에 심리학과 학생회장에 보궐선거로 당선되어 인생에서 매우 쓴 맛과 역경을 경험했고 성공적으로 마쳤지만 지금도 이때 생각하면 분하다고 한다.</li><br>
-<li>졸업 논문을 성공적으로 통과하고 교직 전공을 모두 이수하여 성공적으로 졸업하고 심리학과 최대 Output인 전문상담교사에 취업 준비 중이다.</li> <br>
-</ol>
+  <h2>계명대학교 심리학과 15학번의 자랑 최수민</h2>
+  <img src="3.jpg" width="40%" title="수민이의 20살 감성 사진">
+  <ol>
+  <li>2015년 계명대 심리학과에 입학, 푸른색 코트를 자주 입고 다녔다. 본인은 아니라고 하지만, 사자와 같은 곱슬머리가 작성자의 기억에 남아있다.</li><br>
+  <li>1학년 1학기 MT 이후 친구의 소개로 처음 남자친구를 사귀게 된다.</li> <br>
+  <li><a title="지금은 모든 그룹이 와해되고 일대일로만 만난다.">학기 초, 심리학과의 인싸 무리 심요미의 맴버였으며 이후 오징어라는 모임의 핵심 맴버로 활동했다.</a></li><br>
+  <li>15년도 신입생 환영회 심리학과 레드벨벳 팀(큐트컨셉,,??)의 맴버로 Happiness 안무를 선보여 학과 최초(?)로 신환회 1등이라는 쾌거를 달성했다.</li><br>
+  <li>1학년 최종 학점이 우수하여 '교직 이수'에 선발(나는 왜 못했을까?)되어 현재 전문상담교사 교원 자격증을 취득했다.</li> <br>
+  <li><a title="삶에서 술과 클럽이 가장 많았던 질풍노도의 시기로 맥날 알바비를 모두 술로 탕진했다고 한다.">2학년 휴학 후 맥도날드 알바를 하며 고모 집을 나와 보람이와 동거생활을 시작 한다. 이 때, 2018년 학회장 임기 때와 함께 인생에서 가장 술을 많이 마셨다고 한다.</a></li> <br>
+  <li>대학에서 "짹짹짹 말이 많다"는 의미에서 '참새'라는 별명을 갖게 되었다.<br><br>
+  <li>3학년 이후 보람이와 동거 생활을 청산하고 최초로 나홀로 산다에 성공한다. 정문 원룸에서 정란이와 위아랫 집 이웃으로 살았으며, 지리상 이점으로 횡단보도 신호만 잘 받으면 사회대까지 5분이면 도착했다.</li> <br>
+  <li>4학년 얼떨결(?)에 심리학과 학생회장에 보궐선거로 당선되어 인생에서 매우 쓴 맛과 역경을 경험했고 성공적으로 마쳤다. 지금도 이때 생각하면 힘들었고 분하다고 한다.</li><br>
+  <li>졸업 논문을 성공적으로 통과하고 교직과 전공을 모두 이수하여 성공적으로 졸업하고 현재, 심리학과 최고의 진로로 꼽히는 전문상담교사에 임용 준비 중이다.</li> <br>
+  </ol>
 
-<p>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -62,7 +82,5 @@
   })();
   </script>
   <!--End of Tawk.to Script-->
-</p>
 </body>
-
 </html>

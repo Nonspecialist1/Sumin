@@ -2,138 +2,140 @@
 <html>
 
 <head>
-<title>Suminwiki : 최수민이란?</title>
-<meta charset="utf-8">
+  <title>Suminwiki : 최수민이란?</title>
+  <meta charset="utf-8">
+  <script>
+  function NDmode(self){
+    var target = document.querySelector('body');
+    if(self.value === '야간모드★'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = '일반모드☆';
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'gold';
+        i = i + 1;
+      }
 
-  gtag('config', 'G-KT112EBTHK');
-</script>
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = '야간모드★';
 
-<style>
-  body {
-    margin: 0;
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+        alist[i].style.color = 'green';
+        i = i + 1;
+      }
+    }
   }
-  div {
-    border-top: 3px solid gray;
-  }
-  h1 {
-    text-align: center;
-    font-size: 40px;
-    border-bottom: 3px solid gray;
-    margin: 0;
-    padding: 15px;
-  }
-  a {
-    color: green;
-    text-decoration: none;
-  }
-  ol {
-    height: 110px;
-    padding-bottom: 10px;
-  }
-</style>
+  </script>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KT112EBTHK');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+    }
+    div {
+      border-top: 3px solid gray;
+    }
+    h1 {
+      text-align: center;
+      font-size: 40px;
+      border-bottom: 3px solid gray;
+      margin: 0;
+      padding: 15px;
+    }
+    a {
+      color: green;
+      text-decoration: none;
+    }
+    ol {
+      height: 110px;
+      padding-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body>
-<h1><a href="Sumin.html" style="color:green">수민위키</h1>
+  <h1><a href="Sumin.html" style="color:green">수민위키</h1>
 
-<ol>
-<li><a href="a.html">왜관, 순심여고의 자랑 최수민</li></a><br>
-<li><a href="b.html">계명대학교 심리학과 15학번의 자랑 최수민</li></a><br>
-<li><a href="c.html">심세현의 여자친구 최수민</li></a><br>
-</ol>
-<input type="button" value='야간모드★' onclick="
-  var target = document.querySelector('body');
-  if(this.value === '야간모드★'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = '일반모드☆';
+  <ol>
+  <li><a href="a.html">왜관, 순심여고의 자랑 최수민</li></a><br>
+  <li><a href="b.html">계명대학교 심리학과 15학번의 자랑 최수민</li></a><br>
+  <li><a href="c.html">심세현의 자랑 최수민</li></a><br>
+  </ol>
+  <input type="button" value='야간모드★' onclick="
+    NDmode(this);
+    ">
+  <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'gold';
-      i = i + 1;
-    }
+  <div>
+  <h2>안녕하세요 <input type="checkbox" onclick="alert('반갑습니다.')"></h2>
+  <h2>HELLO <input type="checkbox"></h2>
+  <h2>Bonjour <input type="checkbox"></h2>
+  <h2>Nihao <input type="checkbox"></h2>
+  <h2>Danke <input type="checkbox"></h2>
+  <h2>Grazie <input type="checkbox"></h2>
+  <h2>Merci <input type="checkbox"></h2>
+  <h2>감사합니다 <input type="checkbox" onclick="alert('고맙습니다.')"></h2>
+  </div>
 
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = '야간모드★';
+  <p>
+  <img src="1.jpg" width="50%" title="내가 누구게?">
+  </p>
+  <p>
+  <iframe width="600" height="350" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=3C9C49E59A424DBFFCDF9B4AE236E28DA6E2&outKey=V129a017902002a00df6f24e10033cb9032cf01964ac5d312e8ab24e10033cb9032cf" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>
+  </p>
 
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i < alist.length){
-      alist[i].style.color = 'green';
-      i = i + 1;
-    }
-  }
-  ">
-<input type="text" onchange="alert('이건 아무의미 없습니다.')">
+  <p>
+    <div id="disqus_thread"></div>
+    <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sumin-4.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </p>
 
-<div>
-<h2>안녕하세요 <input type="checkbox" onclick="alert('반갑습니다.')"></h2>
-<h2>HELLO <input type="checkbox"></h2>
-<h2>Bonjour <input type="checkbox"></h2>
-<h2>Nihao <input type="checkbox"></h2>
-<h2>Danke <input type="checkbox"></h2>
-<h2>Grazie <input type="checkbox"></h2>
-<h2>Merci <input type="checkbox"></h2>
-<h2>감사합니다 <input type="checkbox" onclick="alert('고맙습니다.')"></h2>
-</div>
-
-<p>
-<img src="1.jpg" width="50%" title="내가 누구게?">
-</p>
-
-<p>
-<iframe width="600" height="350" src="https://serviceapi.nmv.naver.com/flash/convertIframeTag.nhn?vid=3C9C49E59A424DBFFCDF9B4AE236E28DA6E2&outKey=V129a017902002a00df6f24e10033cb9032cf01964ac5d312e8ab24e10033cb9032cf" frameborder="no" scrolling="no" title="NaverVideo" allow="autoplay; gyroscope; accelerometer; encrypted-media" allowfullscreen></iframe>
-</p>
-
-<p>
-  <div id="disqus_thread"></div>
-  <script>
-      /**
-      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-      /*
-      var disqus_config = function () {
-      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-      };
-      */
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://sumin-4.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-
-<p>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/60be0e674ae6dd0abe7ce7e9/1f7j6ghh3';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-</p>
+  <p>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/60be0e674ae6dd0abe7ce7e9/1f7j6ghh3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </p>
 </body>
-
 </html>
