@@ -4,35 +4,8 @@
   <title>계명의 자랑 최수민</title>
   <meta charset="utf-8">
 
-  <script>
-  function NDmode(self){
-    var target = document.querySelector('body');
-    if(self.value === '야간모드★'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = '일반모드☆';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'gold';
-        i = i + 1;
-      }
-
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = '야간모드★';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'green';
-        i = i + 1;
-      }
-    }
-  }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colorss.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
@@ -54,7 +27,7 @@
     ">
   <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-  <h2>계명대학교 심리학과 15학번의 자랑 최수민</h2>
+  <h2><a>계명대학교 심리학과 15학번의 자랑 최수민</a></h2>
   <img src="3.jpg" width="40%" title="수민이의 20살 감성 사진">
   <ol>
   <li>2015년 계명대 심리학과에 입학, 푸른색 코트를 자주 입고 다녔다. 본인은 아니라고 하지만, 사자와 같은 곱슬머리가 작성자의 기억에 남아있다.</li><br>

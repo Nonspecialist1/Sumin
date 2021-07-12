@@ -4,35 +4,8 @@
   <title>심세현의 자랑 최수민</title>
   <meta charset="utf-8">
 
-  <script>
-  function NDmode(self){
-    var target = document.querySelector('body');
-    if(self.value === '야간모드★'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = '일반모드☆';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'gold';
-        i = i + 1;
-      }
-
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = '야간모드★';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'green';
-        i = i + 1;
-      }
-    }
-  }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colorss.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
@@ -53,7 +26,7 @@
     ">
   <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-  <h2>D+589일 진행중♥</h2>
+  <h2><a>D+589일 진행중♥</a></h2>
   <img src="4.png" width="45%" title="아이패드로 누끼를 따 보았따">
   <ol>
   <li>2019년 12월 06일을 D+1일로 지정했다.</li><br>

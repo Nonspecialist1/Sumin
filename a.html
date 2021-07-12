@@ -5,35 +5,8 @@
   <title>왜관, 순심여고의 자랑 그녀</title>
   <meta charset="utf-8">
 
-  <script>
-  function NDmode(self){
-    var target = document.querySelector('body');
-    if(self.value === '야간모드★'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = '일반모드☆';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'gold';
-        i = i + 1;
-      }
-
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = '야간모드★';
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        alist[i].style.color = 'green';
-        i = i + 1;
-      }
-    }
-  }
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colorss.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KT112EBTHK"></script>
@@ -49,13 +22,13 @@
 </head>
 
 <body>
-  <h1><a href="Sumin.html" style="color:green">수민위키</a></h1>
+  <h1><a href="Sumin.html">수민위키</a></h1>
   <input type="button" value='야간모드★' onclick="
     NDmode(this);
     ">
   <input type="text" onchange="alert('이건 아무의미 없습니다.')">
 
-  <h2>왜관, 순심여고의 자랑 그녀</h2>
+  <h2><a>왜관, 순심여고의 자랑 그녀</a></h2>
   <img src="2.jpg" width="40%" target="_blank" title="취미는 음악감상하며 코파기">
 
   <ol>
